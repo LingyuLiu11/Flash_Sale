@@ -1,0 +1,20 @@
+public class Solution {
+    public int NumSol(int variables, int sum) {
+        if (sum == 0) {
+            return 1;
+        }
+        if (variables == 1) {
+            return 1;
+        }
+        int result = 0;
+        for (int i = 0; i < sum; i++) {
+            result += NumSol(variables - 1, sum - i);
+        }
+        return result;
+    }
+
+
+    public static void main(String[] args) {
+        System.out.println(NumSol(4, 19));
+    }
+}
