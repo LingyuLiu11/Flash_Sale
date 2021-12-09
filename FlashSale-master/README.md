@@ -1,5 +1,5 @@
 # FlashSale
-This is a flash sale project. 
+This is a flash sale project.  
 
 Highlights:
 
